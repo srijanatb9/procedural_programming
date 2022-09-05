@@ -60,9 +60,3 @@ four_digit_code = ''
 for a in range(4):
     four_digit_code = four_digit_code + str(randint(1, 6))
 print(f'The four digit code: {four_digit_code}.')
-
-
-
-
-
-
