@@ -1,6 +1,8 @@
 import sys
 
 
+
+
 sys.exit()
 
 #1
@@ -22,7 +24,7 @@ x = 1
 num_l = []
 
 while x > 0:
-    num = input("Enter a number: ")
+    num = input(int("Enter a number: "))
 
     if num == "":
         break
