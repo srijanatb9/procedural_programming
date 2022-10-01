@@ -1,7 +1,10 @@
 import sys
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 sys.exit()
 
 
@@ -15,7 +18,11 @@ def airportNameTown(icao_cd):
     result = cursor.fetchall()
     if cursor.rowcount > 0:
         for row in result:
+<<<<<<< HEAD
             print(f"Name: {result[0][0]}, Town: {result[0][1]}")
+=======
+            print(f"Name: {result[0][0]}, town: {result[0][1]}")
+>>>>>>> origin/master
         return
 
 connection = mysql.connector.connect(
@@ -28,7 +35,11 @@ connection = mysql.connector.connect(
          )
 
 i_code = input("Enter the ICAO code of the airport: ").upper()
+<<<<<<< HEAD
 airportNameTown(i_code)
+=======
+airport_name_and_town(code)
+>>>>>>> origin/master
 
 
 #2
@@ -61,7 +72,11 @@ import mysql.connector
 from geopy import distance
 
 def airport_coordinates(icao_cd):
+<<<<<<< HEAD
     sql = 'SELECT latitude_deg, longitude_deg FROM airport WHERE ident = ' + f'"{icao_cd}"' + ";"
+=======
+    sql = 'SELECT latitude_deg, longitude_deg FROM airport WHERE gps_code = ' + f'"{icao_cd}"' + ";"
+>>>>>>> origin/master
     cursor = connection.cursor()
     cursor.execute(sql)
     result = cursor.fetchall()
